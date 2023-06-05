@@ -1,3 +1,3 @@
 module.exports = {
-    cityRepository: requestAnimationFrame("./city-repository")
+    CityRepository: require("./city-repository")
 }
