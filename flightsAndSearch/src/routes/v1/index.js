@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.post('/city' , cityController.create);
 router.delete('/city/:id' , cityController.destroy);
-router.put('/city/:id' , cityController.update);
+router.patch('/city/:id' , cityController.update);
 router.get('/city/:id' , cityController.get);
 
 
