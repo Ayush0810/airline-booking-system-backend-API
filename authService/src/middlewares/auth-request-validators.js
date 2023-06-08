@@ -8,7 +8,7 @@ const validateUserAuth = (req,res,next)=>{
         })
     }
 
-    next();
+    next(); 
 }
 
 
