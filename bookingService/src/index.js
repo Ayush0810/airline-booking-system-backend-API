@@ -2,7 +2,7 @@ const express = require("express");
 const { PORT } = require("./config/serverConfig");
 const apiRoutes = require("./routes/index")
 const setupAndStartServer = async () => {
-
+const db = require("./models/index")
 	const app = express();
 	//middlewares
 	app.use(express.json());
