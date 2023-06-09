@@ -34,10 +34,12 @@ class UserService {
 				email: user.email,
 				id: user.id,
 			});
-			console.log(newJwt);
 
 			return newJwt;
 		} catch (error) {
+			if(error.name == 'AttributeNotFound'){
+				throw error
+			}
 			console.log("something went wrong in signin process");
 			throw { error };
 		}
