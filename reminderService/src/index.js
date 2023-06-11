@@ -1,6 +1,7 @@
 const express = require("express");
 const {PORT} = require("./config/serverConfig")
-const TicketController = require("./controllers/ticket-controller")
+const TicketController = require("./controllers/ticket-controller");
+const setupJobs = require("./utils/job")
 const setUpAndStartServer = ()=>{
     const app = express();
     app.use(express.json())
@@ -11,6 +12,7 @@ const setUpAndStartServer = ()=>{
 
     app.listen(PORT,()=>{
         console.log("reminder service listening at port" ,PORT)
+        setupJobs();
     })
 }
 
