@@ -1,5 +1,5 @@
 {
-  "name": "reminderservice",
+  "name": "api-gateway",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,13 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "amqplib": "^0.10.3",
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
-    "mysql2": "^3.3.3",
-    "node-cron": "^3.0.2",
-    "nodemailer": "^6.9.3",
-    "sequelize": "^6.32.0",
-    "sequelize-cli": "^6.6.1"
+    "express-rate-limit": "^7.0.1",
+    "http-proxy-middleware": "^2.0.6",
+    "morgan": "^1.10.0"
   }
 }
